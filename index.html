@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="header">
+            <div class="icon">°</div>
+
+            <h1>Temperature Converter</h1>
+
+            <p>
+                Convert temperatures quickly and accurately
+                between Celsius, Fahrenheit, and Kelvin.
+            </p>
+        </div>
+
+        <div class="input-group">
+            <label for="temperature">Temperature</label>
+
+            <input
+                type="number"
+                id="temperature"
+                placeholder="Enter temperature"
+            >
+        </div>
+
+        <div class="unit-row">
+
+            <div class="input-group">
+                <label for="fromUnit">From</label>
+
+                <select id="fromUnit">
+                    <option value="celsius">Celsius (°C)</option>
+                    <option value="fahrenheit">Fahrenheit (°F)</option>
+                    <option value="kelvin">Kelvin (K)</option>
+                </select>
+            </div>
+
+            <button class="swap-btn" id="swapBtn" title="Swap units">
+                ⇄
+            </button>
+
+            <div class="input-group">
+                <label for="toUnit">To</label>
+
+                <select id="toUnit">
+                    <option value="fahrenheit">Fahrenheit (°F)</option>
+                    <option value="celsius">Celsius (°C)</option>
+                    <option value="kelvin">Kelvin (K)</option>
+                </select>
+            </div>
+
+        </div>
+
+        <button class="convert-btn" id="convertBtn">
+            Convert Temperature
+        </button>
+
+        <div id="result">
+            <div class="result-label">Converted Temperature</div>
+            <div class="result-value">—</div>
+        </div>
+
+        <div class="footer">
+            Supports Celsius, Fahrenheit & Kelvin
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
